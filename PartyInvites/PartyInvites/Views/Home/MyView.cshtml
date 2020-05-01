@@ -1,16 +1,17 @@
-﻿@{ 
+﻿@{
     Layout = null;
 }
 
-    <html>
-    <head>
-        <title>Party Invites App</title>
-    </head>
-    <body>
-        <h3>
-            @ViewBag.Greeting
-            <br />
-            <a asp-action="RsvpForm">RSVP now</a>
-        </h3>
-    </body>
-    </html>
+<html>
+<head>
+    <title>Party Invites App</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <h3>
+        @ViewBag.Greeting
+        <br />
+        <a asp-action="RsvpForm">RSVP now</a>
+    </h3>
+</body>
+</html>

@@ -32,6 +32,11 @@ namespace PartyInvites.Controllers
         [HttpPost]
         public IActionResult RsvpForm(GuestResponse response)
         {
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+
             Repository.AddResponse(response);
 
             ViewBag.respond = response.Attend == true ? "Thank You for accepting the invitation :) meet you at the party, " + response.Name:"Ohh, we will miss you at the party. Do let us know if you change your plans, " + response.Name;
@@ -42,6 +47,11 @@ namespace PartyInvites.Controllers
         {
             //var attendees = Repository.Responses.Where(r => r.Attend == true);
             return View(Repository.Responses.Where(r => r.Attend == true));
+        }
+
+        public IActionResult NotComing()
+        {
+            return View("ListResponses", Repository.Responses.Where(r => r.Attend == false));
         }
 
         //public IActionResult Privacy()

@@ -17,6 +17,7 @@
             <th>Name</th>
             <th>Email</th>
             <th>Phone</th>
+            <th>Food Restrictions</th>
         </tr>
         @foreach (var response in Model)
         {
@@ -24,8 +25,9 @@
             <tr>
                 <td>@i</td>
                 <td>@response.Name</td>
-                <td>@response.Email</td>
+                <td><a href="mailto:@response.Email">@response.Email</a></td>
                 <td>@response.Phone</td>
+                <td>@response.FoodRestrict</td>
             </tr>
         }
     </table>
