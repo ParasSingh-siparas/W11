@@ -1,15 +1,10 @@
 ﻿@model IEnumerable<GuestResponse>
 @{
-    Layout = null;
+    ViewData["Title"] = "Guest List";
     int i = 0;
 }
 
-<html>
-<head>
-    <title>Guest List</title>
-    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
-</head>
-<body class="container">
+<div class="container">
     <h3>Guest List</h3>
     <p>@Model.Count() people are coming to the party</p>
     <table>
@@ -32,5 +27,4 @@
             </tr>
         }
     </table>
-</body>
-</html>
+</div>

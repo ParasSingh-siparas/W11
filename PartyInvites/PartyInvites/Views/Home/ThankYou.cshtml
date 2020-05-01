@@ -1,16 +1,8 @@
 ﻿@{
-    Layout = null;
+    ViewData["Title"] = "Thank You";
 }
 
-<html>
-<head>
-    <title>Party Invites App</title>
-    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
-</head>
-<body>
-    <h3>
-        @ViewBag.respond
-    </h3>
-    <p>Click <a asp-action="ListResponses">here</a> to see who else is coming.</p>
-</body>
-</html>
+<h3>
+    @ViewBag.respond
+</h3>
+<p>Click <a asp-action="ListResponses">here</a> to see who else is coming.</p>

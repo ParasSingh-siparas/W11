@@ -1,21 +1,13 @@
 ﻿@{
-    Layout = null;
+    ViewData["Title"] = "Party Invites App";
 }
 
-<html>
-<head>
-    <title>Party Invites App</title>
-    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
-</head>
-<body>
-    <div class="text-center">
-        <h3>
-            @ViewBag.Greeting
-            <br /><br />
-            <a class="btn btn-primary" asp-action="RsvpForm">RSVP now</a>
-        </h3>
-    </div>
-    <hr />
-    <footer>Made by Paras Singh</footer>
-</body>
-</html>
+<div class="text-center">
+    <h3>
+        @ViewBag.Greeting
+        <br /><br />
+        <a class="btn btn-primary" asp-action="RsvpForm">RSVP now</a>
+    </h3>
+</div>
+<hr />
+<footer>Made by Paras Singh</footer>

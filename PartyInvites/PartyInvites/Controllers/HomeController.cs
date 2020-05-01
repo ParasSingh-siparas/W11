@@ -39,7 +39,7 @@ namespace PartyInvites.Controllers
 
             Repository.AddResponse(response);
 
-            ViewBag.respond = response.Attend == true ? "Thank You for accepting the invitation :) meet you at the party, " + response.Name:"Ohh, we will miss you at the party. Do let us know if you change your plans, " + response.Name;
+            ViewBag.respond = response.Attend == true ? "Thank You for accepting the invitation :) meet you at the party, " + response.Name:"Ohh, we will miss you at the party :( Do let us know if you change your plans, " + response.Name;
             return View("ThankYou");
         }
 
