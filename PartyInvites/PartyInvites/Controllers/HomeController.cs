@@ -20,7 +20,19 @@ namespace PartyInvites.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.Greeting = DateTime.Now.Hour <12 ? "Good Morning":"Good Afternoon";
             return View("MyView");
+        }
+
+        public IActionResult RsvpForm()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult RsvpForm(GuestResponse response)
+        {
+            return View("ThankYou");
         }
 
         //public IActionResult Privacy()
