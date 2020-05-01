@@ -37,3 +37,4 @@ D:\Libraries\Documents\C#\Week11\W11\PartyInvites\PartyInvites\obj\Debug\netcore
 D:\Libraries\Documents\C#\Week11\W11\PartyInvites\PartyInvites\obj\Debug\netcoreapp3.1\Razor\Views\Home\MyView.cshtml.g.cs
 D:\Libraries\Documents\C#\Week11\W11\PartyInvites\PartyInvites\obj\Debug\netcoreapp3.1\Razor\Views\Home\RsvpForm.cshtml.g.cs
 D:\Libraries\Documents\C#\Week11\W11\PartyInvites\PartyInvites\obj\Debug\netcoreapp3.1\Razor\Views\Home\ThankYou.cshtml.g.cs
+D:\Libraries\Documents\C#\Week11\W11\PartyInvites\PartyInvites\obj\Debug\netcoreapp3.1\Razor\Views\Home\ListResponses.cshtml.g.cs

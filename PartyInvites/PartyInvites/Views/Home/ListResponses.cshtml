@@ -1,0 +1,33 @@
+﻿@model IEnumerable<GuestResponse>
+@{
+    Layout = null;
+    int i = 0;
+}
+
+<html>
+<head>
+    <title>Guest List</title>
+</head>
+<body>
+    <h3>Guest List</h3>
+    <p>@Model.Count() people are coming to the party</p>
+    <table>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+        @foreach (var response in Model)
+        {
+            i += 1;
+            <tr>
+                <td>@i</td>
+                <td>@response.Name</td>
+                <td>@response.Email</td>
+                <td>@response.Phone</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>
