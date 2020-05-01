@@ -8,10 +8,14 @@
     <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
 </head>
 <body>
-    <h3>
-        @ViewBag.Greeting
-        <br />
-        <a asp-action="RsvpForm">RSVP now</a>
-    </h3>
+    <div class="text-center">
+        <h3>
+            @ViewBag.Greeting
+            <br /><br />
+            <a class="btn btn-primary" asp-action="RsvpForm">RSVP now</a>
+        </h3>
+    </div>
+    <hr />
+    <footer>Made by Paras Singh</footer>
 </body>
 </html>

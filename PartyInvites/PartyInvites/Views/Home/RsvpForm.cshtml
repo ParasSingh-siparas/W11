@@ -8,35 +8,41 @@
 <html>
 <head>
     <title>RSVP Form</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
 </head>
 <body>
-    <div>RSVP Form</div>
-    <form asp-action="RsvpForm" method="post">
-        <div asp-validation-summary="All"></div>
-        <p>
-            <label asp-for="Name">Your Name: </label>
-            <input asp-for="Name" />
-        </p>
-        <p>
-            <label asp-for="Email">Your Email: </label>
-            <input asp-for="Email" />
-        </p>
-        <p>
-            <label asp-for="Phone">Your Phone Number: </label>
-            <input asp-for="Phone" />
-        </p>
-        <p>
-            <label asp-for="Attend">Will you attend the Party?</label>
-            <select asp-for="Attend">
-                <option value="true">Yes</option>
-                <option value="false">No</option>
-            </select>
-        </p>
-        <p>
-            <label asp-for="FoodRestrict">Do you you have any Food Restrictions: </label>
-            <input asp-for="FoodRestrict" />
-        </p>
-        <button type="reset">Reset</button>&nbsp;<button type="submit">Submit RSVP</button>
-    </form>
+    <div class="text-center"><h2>RSVP Form</h2></div>
+    <div class="container">
+        <div class="col-4 center-div">
+            <form asp-action="RsvpForm" method="post">
+                <div asp-validation-summary="All"></div>
+                <div class="form-group">
+                    <label asp-for="Name">Your Name: </label>
+                    <input class="form-control" asp-for="Name" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Email">Your Email: </label>
+                    <input class="form-control" asp-for="Email" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Phone">Your Phone Number: </label>
+                    <input class="form-control" asp-for="Phone" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Attend">Will you attend the Party?</label>
+                    <select class="form-control" asp-for="Attend">
+                        <option value="true">Yes</option>
+                        <option value="false">No</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label asp-for="FoodRestrict">Do you you have any Food Restrictions: </label>
+                    <input class="form-control" asp-for="FoodRestrict" />
+                </div>
+                <button class="btn btn-primary" type="reset">Reset</button>&nbsp;<button class="btn btn-primary" type="submit">Submit RSVP</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

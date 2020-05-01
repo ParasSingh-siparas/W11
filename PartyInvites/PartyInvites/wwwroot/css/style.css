@@ -1,0 +1,12 @@
+﻿.input-validation-error{
+    border: 1px solid red;
+}
+
+.center-div{
+    margin:0 auto
+}
+
+.validation-summary-error {
+    color:red;
+    text-align:justify;
+}

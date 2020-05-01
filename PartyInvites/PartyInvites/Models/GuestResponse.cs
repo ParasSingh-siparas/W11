@@ -10,7 +10,7 @@ namespace PartyInvites.Models
     {
         [Required(ErrorMessage = "Please enter your Name")]
         public string Name { get; set; }
-        [RegularExpression(".+\\@.+\\..+", ErrorMessage = "Please enter a valid Email")]
+        [RegularExpression(".+\\@.+\\..+", ErrorMessage = "Please enter a valid Email"), Required(ErrorMessage = "Please enter an Email")]
         public string Email { get; set; }
         [Required(ErrorMessage = "Please enter your Phone Number")]
         public string Phone { get; set; }
